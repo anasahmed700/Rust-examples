@@ -51,7 +51,7 @@ fn main() {
     let coin = [5; 10]; // to store same value in array [value; array-length]
     println!("{:?}", coin);
 
-    let days = ['M', 'T', 'W'];
+    let days = ['M', 'T', 'W']; // accessing array elements
     println!("{:#?}", days[1]);
 
 
