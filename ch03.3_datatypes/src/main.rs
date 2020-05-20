@@ -54,6 +54,37 @@ fn main() {
     let days = ['M', 'T', 'W']; // accessing array elements
     println!("{:#?}", days[1]);
 
+    let aftari = ["Mix chat", "Samosay", "Pakorey", "Dahi Baray"];
+
+    // iterator
+    for num in aftari.iter() { 
+        println!("Iteration {} ", num);
+    }
+
+    for num in (1..=10).rev() {
+        println!("on index {}", num);
+    }
+    
+
+    // slicing 
+    let games = "Cricket & football";
+    let game1 = &games[0..7];
+    println!("game1 is {}", game1);
+    let game2 = &games[10..=17];
+    println!("game2 is {}", game2);
 
 
+    // Panic handling
+    for num in 0..5 {
+        println!("After index {} is {:?}", num, aftari.get(num));
+    }
+
+    let mut score: u8 = 0;
+    loop {
+        println!("Your score is {}", score);
+        score += 1;
+        for _delay in 0..100000 {
+            
+        }
+    }
 }
