@@ -54,4 +54,15 @@ fn main() {
         println!("{}", elem);
     }
 
+    // 4. match
+    println!("Match control flow...");
+    let number = 3;
+    match number {
+        1 => println!("you have one"), // case like
+        2 => println!("you have two"),
+        3 => println!("you have three"),
+        4 => println!("you have four"),
+        5 => println!("you have five"),
+        _ => println!("more than five") // default like
+    }
 }
