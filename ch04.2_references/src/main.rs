@@ -1,6 +1,6 @@
-fn main() {
-    // Referencing & borrowing
+fn main() { 
 
+    // Referencing & borrowing
     let mut course = String::from("IOT");
     println!("String Content {}", course); // storage heap
     println!("Memory address Pointer {:p}", &course); // storage stack
