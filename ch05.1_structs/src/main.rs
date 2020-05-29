@@ -32,7 +32,8 @@ fn main() {
         price : 800,
         available : true
     };
-    let karahi = Food{
+    // mutable struct 
+    let mut karahi = Food{
         available : true,
         restaurant : String::from("BBQ tonight"),
         // taking field value from another instance
@@ -47,9 +48,10 @@ fn main() {
         ..karahi // Creating Instances From Other Instances With Struct Update Syntax
     };
     println!("Karahi: {:#?}", karahi);
+    karahi.price = 1100; // mutable struct value is changed
     println!("Karahi {} price is {}", karahi.item, karahi.price);
     println!("Biryani: {:#?}", biryani);
-    println!("Karahi {} price is {}", biryani.item, karahi.price);
+    println!("{} price is {}", biryani.item, karahi.price);
 
     
     println!("Struct with functions...");
